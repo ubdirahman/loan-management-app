@@ -149,7 +149,7 @@ export default function DashboardClient({ initialLoans, user }: DashboardClientP
   }
 
   const totalAmount = loans.reduce((sum, loan) => sum + loan.amount, 0)
-  const paidAmount = loans.filter((loan) => loan.status === "paid").reduce((sum, loan) => sum + loan.amount, 0)
+  const paidAmount = loans.filter((loan)).reduce((sum, loan) => sum + loan.amount, 0)
   const pendingAmount = totalAmount - paidAmount
 
   return (
