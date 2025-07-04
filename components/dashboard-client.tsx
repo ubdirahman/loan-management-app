@@ -30,7 +30,6 @@ interface Loan {
   description: string
   amount: number
   due_date: string
-  status: "pending" | "paid" | "overdue"
   category: string
   borrower_name: string
   created_at: string
@@ -52,7 +51,7 @@ export default function DashboardClient({ initialLoans, user }: DashboardClientP
     description: "",
     amount: "",
     due_date: "",
-    status: "pending" as const,
+  
     category: "",
     borrower_name: "",
   })
