@@ -79,7 +79,6 @@ export default function DashboardClient({ initialLoans, user }: DashboardClientP
       description: "",
       amount: "",
       due_date: "",
-      status: "pending",
       category: "",
       borrower_name: "",
     })
