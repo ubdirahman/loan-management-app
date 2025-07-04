@@ -65,7 +65,7 @@ export default function DashboardClient({ initialLoans, user }: DashboardClientP
       loan.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       loan.borrower_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       loan.category.toLowerCase().includes(searchTerm.toLowerCase())
-    return matchesSearch && matchesFilter
+    return matchesSearch 
   })
 
   const handleSignOut = async () => {
