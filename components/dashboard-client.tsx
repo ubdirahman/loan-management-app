@@ -93,7 +93,6 @@ export default function DashboardClient({ initialLoans, user }: DashboardClientP
       description: formData.description,
       amount: Number.parseFloat(formData.amount),
       due_date: formData.due_date,
-      status: formData.status,
       category: formData.category,
       borrower_name: formData.borrower_name,
       user_id: user.id,
@@ -124,7 +123,6 @@ export default function DashboardClient({ initialLoans, user }: DashboardClientP
       description: loan.description,
       amount: loan.amount.toString(),
       due_date: loan.due_date,
-      status: loan.status,
       category: loan.category,
       borrower_name: loan.borrower_name,
     })
