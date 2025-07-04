@@ -58,7 +58,6 @@ interface Loan {
   description: string
   amount: number
   date: string
-  status: "pending" | "paid" | "overdue"
   createdAt: string
 }
 
