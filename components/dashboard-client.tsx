@@ -65,7 +65,6 @@ export default function DashboardClient({ initialLoans, user }: DashboardClientP
       loan.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       loan.borrower_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       loan.category.toLowerCase().includes(searchTerm.toLowerCase())
-    const matchesFilter = filterStatus === "all" || loan.status === filterStatus
     return matchesSearch && matchesFilter
   })
 
